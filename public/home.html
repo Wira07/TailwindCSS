@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,67 +10,104 @@
             theme: {
                 extend: {
                     spacing: {
-                    13: '3.25rem' 
-                }
+                        13: '3.25rem',
+                        15: '3.75rem',
+                    },
+                    fontFamily: {
+                        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                    },
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="css/final.css">
 </head>
-<body>
-    <div class="flex flex-row">
-        <div class="w-1/3 bg-blue-600 text-white py-6">
+
+<body class="bg-gray-100 text-gray-800">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <div class="w-full md:w-1/3 bg-blue-600 text-white py-6">
             <h1 class="text-4xl text-center font-bold">Wira Sukma Saputra</h1>
         </div>
-        <div class="w-2/3 bg-gray-100 text-gray-800 p-4">
-            <section class="bg-white shadow-md rounded-lg p-6">
+        <div class="w-full md:w-2/3 p-4">
+            <section class="bg-white shadow-md rounded-lg p-6 mb-8">
                 <h2 class="text-2xl font-semibold mb-4">Tentang Saya</h2>
-                <p class="m-3 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque id expedita earum. Est, quidem reprehenderit, quae tempora sint atque explicabo esse asperiores qui, velit ut ad commodi laboriosam hic.
+                <p class="m-3 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400 font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit itaque id expedita earum. Est,
+                    quidem reprehenderit, quae tempora sint atque explicabo esse asperiores qui, velit ut ad commodi
+                    laboriosam hic.
                 </p>
             </section>
             <section class="mt-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 1" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 1</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 1.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 2" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 2</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 2.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 3" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 3</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 3.</p>
                     </div>
                 </div>
+            </section>
             <section class="mt-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 1" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 1</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 1.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 2" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 2</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 2.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 3" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 3</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 3.</p>
                     </div>
-                </div>  
+                </div>
+            </section>
             <section class="mt-8">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 1" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 1</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 1.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 2" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 2</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 2.</p>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 3" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyek 3</h3>
+                        <p class="text-gray-700">Deskripsi singkat tentang proyek 3.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 1" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyek 1</h3>
+                        <p class="text-gray-700">Deskripsi singkat tentang proyek 1.</p>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 2" class="w-full h-32 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Proyek 2</h3>
+                        <p class="text-gray-700">Deskripsi singkat tentang proyek 2.</p>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg p-6">
+                        <img src="https://via.placeholder.com/150" alt="Proyek 3" class="w-full h-32 object-cover rounded-lg mb-4">
                         <h3 class="text-xl font-semibold mb-2">Proyek 3</h3>
                         <p class="text-gray-700">Deskripsi singkat tentang proyek 3.</p>
                     </div>
@@ -81,4 +119,5 @@
         <p class="text-center">&copy; 2024 Wira Sukma Saputra. All rights reserved.</p>
     </footer>
 </body>
+
 </html>

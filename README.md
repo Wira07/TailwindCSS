@@ -1,7 +1,3 @@
-Untuk memastikan gambar muncul dengan benar di file README.md, pastikan bahwa jalur ke gambar benar dan bahwa gambar tersebut benar-benar ada di direktori yang ditentukan. Berdasarkan jalur yang Anda berikan (`./public/img/wira.png`), gambar tersebut seharusnya berada di direktori `public/img` relatif terhadap lokasi file README.md.
-
-Berikut adalah versi perbaikan dari file README.md Anda. Saya menambahkan beberapa detail untuk memastikan format markdown tetap valid dan konsisten:
-
 ```markdown
 # Belajar TailwindCSS 🎨
 

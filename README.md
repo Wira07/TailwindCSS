@@ -5,7 +5,7 @@ Selamat datang di repositori "Belajar TailwindCSS"! 🚀
 
 Ini adalah tempat untuk memulai perjalanan Anda dalam belajar dan menguasai TailwindCSS, sebuah framework CSS utility-first yang sangat populer. 💡
 
-![TailwindCSS](https://cdn.dribbble.com/userupload/11234539/file/original-05977eb9d932b48de754f76734989892.png?resize=1024x766)
+![TailwindCSS](https://cdn.dribbble.com/userupload/11234539/file/original-05977eb9d932b48de754f76734989892.png?resize=800x600)
 
 ## Fitur ✨
 

@@ -6,8 +6,41 @@
     <title>Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/final.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+              15: "3.75rem",
+            },
+            fontFamily: {
+              sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+              slate: {
+                50: "#f9fafb",
+                100: "#f4f5f7",
+                200: "#e5e7eb",
+                300: "#d2d6dc",
+                400: "#9fa6b2",
+                500: "#6b7280",
+                600: "#4b5563",
+                700: "#374151",
+                800: "#252f3f",
+                900: "#161e2e",
+              },
+              wira: "#bababa",
+              "wira-light": "#f3f3f3",
+              "wira-dark": "#333333",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="flex h-screen bg-gray-100">
+  <body class="flex h-screen bg-gray-100 dark:bg-slate-800 dark:text-slate-800">
     <div class="flex flex-col w-64 bg-blue-600 text-white">
       <div class="flex items-center justify-center h-16 bg-blue-800">
         <img src="img/tailwindcss.png" class="w-8 h-8 rounded-full" alt="User Avatar" />
@@ -81,19 +114,19 @@
       </div>
     </div>
     <div class="flex flex-col flex-grow">
-      <div class="flex items-center justify-between h-16 px-4 bg-white shadow-md">
-        <input type="text" placeholder="Search..." class="p-2 border border-gray-300 rounded-md" />
-        <div class="flex items-center space-x-4">
-          <button class="relative">
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <div class="flex items-center justify-between h-16 px-6 bg-white shadow-lg">
+        <input type="text" placeholder="Search..." class="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <div class="flex items-center space-x-6">
+          <button class="relative focus:outline-none">
+            <svg class="w-6 h-6 text-gray-500 hover:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 7h6m-6 4h6m-6 4h6m-6 4h6"></path>
             </svg>
-            <span class="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full"></span>
+            <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-red-600 rounded-full border-2 border-white"></span>
           </button>
           <div class="flex items-center space-x-2">
-            <img src="img/wira.png" class="w-10 h-10 rounded-full" alt="User Avatar" />
-            <span>Wira Sukma Saputra</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <img src="img/wira.png" class="w-10 h-10 rounded-full border-2 border-gray-300" alt="User Avatar" />
+            <span class="text-gray-700 font-medium">Wira Sukma Saputra</span>
+            <svg class="w-4 h-4 text-gray-500 hover:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
@@ -101,33 +134,33 @@
       </div>
       <div class="flex-grow p-4">
         <!-- Content goes here -->
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <!-- Card 1 -->
-          <div class="p-4 bg-white rounded-lg shadow-md">
-            <h2 class="text-xl font-semibold">Overview</h2>
-            <p class="mt-2 text-gray-600">A quick snapshot of your performance metrics.</p>
+          <div class="p-4 bg-white rounded-lg shadow-md dark:bg-slate-500 dark:text-slate-100 dark:hover:bg-slate-600 focus:ring hover:bg-slate-500">
+            <h2 class="text-xl font-semibold dark:text-slate-100">Overview</h2>
+            <p class="mt-2 text-gray-600 dark:text-slate-100">A quick snapshot of your performance metrics.</p>
             <div class="mt-4">
               <span class="block text-2xl font-bold">76%</span>
-              <span class="block text-gray-500">Tasks Completed</span>
+              <span class="block text-gray-500 dark:text-slate-100">Tasks Completed</span>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="p-4 bg-white rounded-lg shadow-md">
+          <div class="p-4 bg-white rounded-lg shadow-md dark:text-slate-100 dark:bg-slate-500">
             <h2 class="text-xl font-semibold">New Projects</h2>
-            <p class="mt-2 text-gray-600">Stay updated with your new projects.</p>
+            <p class="mt-2 text-gray-600 dark:text-slate-100">Stay updated with your new projects.</p>
             <div class="mt-4">
               <span class="block text-2xl font-bold">5</span>
               <span class="block text-gray-500">Projects this month</span>
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="p-4 bg-white rounded-lg shadow-md">
-            <h2 class="text-xl font-semibold">Team Activities</h2>
-            <p class="mt-2 text-gray-600">Recent activities by your team members.</p>
+          <div class="p-4 bg-white rounded-lg shadow-md dark:bg-slate-500 dark:text-slate-100 dark:hover:bg-slate-600">
+            <h2 class="text-xl font-semibold dark:text-slate-100">Team Activities</h2>
+            <p class="mt-2 text-gray-600 dark:text-slate-100">Recent activities by your team members.</p>
             <ul class="mt-4 space-y-2">
-              <li class="text-gray-700">Jane Doe completed a task</li>
-              <li class="text-gray-700">John Smith added a new project</li>
-              <li class="text-gray-700">Emily Johnson updated the calendar</li>
+              <li class="text-gray-700 dark:text-slate-100">Jane Doe completed a task</li>
+              <li class="text-gray-700 dark:text-slate-100">John Smith added a new project</li>
+              <li class="text-gray-700 dark:text-slate-100">Emily Johnson updated the calendar</li>
             </ul>
           </div>
           <!-- Card 4 -->
@@ -150,7 +183,6 @@
               <li class="text-gray-700">Emily Johnson updated the calendar</li>
             </ul>
           </div>
-          <!-- Card 6 -->
         </div>
       </div>
     </div>

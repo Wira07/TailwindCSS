@@ -1,4 +1,8 @@
-````markdown
+Untuk memastikan gambar muncul dengan benar di file README.md, pastikan bahwa jalur ke gambar benar dan bahwa gambar tersebut benar-benar ada di direktori yang ditentukan. Berdasarkan jalur yang Anda berikan (`./public/img/wira.png`), gambar tersebut seharusnya berada di direktori `public/img` relatif terhadap lokasi file README.md.
+
+Berikut adalah versi perbaikan dari file README.md Anda. Saya menambahkan beberapa detail untuk memastikan format markdown tetap valid dan konsisten:
+
+```markdown
 # Belajar TailwindCSS 🎨
 
 Selamat datang di repositori "Belajar TailwindCSS"! 🚀
@@ -47,6 +51,7 @@ Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
 
 5. **Kompilasi CSS** 🏗️
    Kompilasi CSS Anda menggunakan Tailwind CLI:
+   
    ```bash
    npx tailwindcss build src/tailwind.css -o dist/output.css
    ```
@@ -68,4 +73,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 Semoga bermanfaat dan selamat belajar TailwindCSS! 🎉
 
 Dibuat dengan ❤️ oleh [Wira07](https://github.com/Wira07)
-````
+```

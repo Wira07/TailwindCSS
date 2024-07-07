@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wira Sukma Saputra</title>
+  <link rel="stylesheet" href="css/final.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            13: "3.25rem",
+            15: "3.75rem",
+          },
+          fontFamily: {
+            sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+          },
+          colors: {
+            slate: {
+              50: "#f9fafb",
+              100: "#f4f5f7",
+              200: "#e5e7eb",
+              300: "#d2d6dc",
+              400: "#9fa6b2",
+              500: "#6b7280",
+              600: "#4b5563",
+              700: "#374151",
+              800: "#252f3f",
+              900: "#161e2e",
+            },
+            wira: "#bababa",
+            "wira-light": "#f3f3f3",
+            "wira-dark": "#333333",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="text-center">
+    <div class="text font-bold text-2xl mb-10">Wira Sukma Saputra</div>
+    <div class="max-w-xl h-96 bg-slate-500 overflow-y-scroll mx-auto bg-cover bg-center mb-10" style="background-image: url(../public/img/wira.png);">
+      <p class="p-5 text-1xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit repellendus nemo voluptates suscipit quidem adipisci aperiam, dolores dolorem maxime, corporis vel laborum corrupti, blanditiis dolore! Possimus alias neque itaque nostrum. Obcaecati delectus harum error, quisquam molestiae magnam sunt possimus adipisci in eos laborum, repellendus aliquam nam, expedita a eligendi!</p>
+    </div>
+    <div class="mt-10 mb-10 max-w-xl mx-auto h-96 bg-slate-300 bg-cover border-[15px] border-sky-500 shadow-2xl" style="background-image: url(./img/wira.png);"></div>
+    <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white font-semibold py-3 px-6 rounded-lg shadow-lg mt-10">
+      Save Changes
+    </button>
+  </div>
+</body>
+</html>

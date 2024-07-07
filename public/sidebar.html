@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/final.css" />
+  </head>
+  <body class="flex h-screen bg-gray-100">
+    <div class="flex flex-col w-64 bg-blue-600 text-white">
+      <div class="flex items-center justify-center h-16 bg-blue-800">
+        <img src="img/tailwindcss.png" class="w-8 h-8 rounded-full" alt="User Avatar" />
+        <span class="ml-2">Dashboard</span>
+      </div>
+      <div class="flex flex-col flex-grow p-4 space-y-4">
+        <a href="#" class="flex items-center p-2 bg-blue-700 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6"></path>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5V4H2v16h5M2 9h20"></path>
+          </svg>
+          <span>Team</span>
+        </a>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 11h18M3 15h18M3 19h18"></path>
+          </svg>
+          <span>Projects</span>
+        </a>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 9h10m-10 4h10m-7 4h4"></path>
+          </svg>
+          <span>Calendar</span>
+        </a>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5"></path>
+          </svg>
+          <span>Documents</span>
+        </a>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h10M7 8h10m-7 8h4"></path>
+          </svg>
+          <span>Reports</span>
+        </a>
+        <div class="flex-grow"></div>
+        <div>
+          <h3 class="mb-2">Your teams</h3>
+          <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"></path>
+            </svg>
+            <span>Heroicons</span>
+          </a>
+          <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+            </svg>
+            <span>Tailwind Labs</span>
+          </a>
+          <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v18M19 3v18M5 8h14M5 16h14"></path>
+            </svg>
+            <span>Workcation</span>
+          </a>
+        </div>
+        <a href="#" class="flex items-center p-2 hover:bg-blue-500 rounded-md">
+          <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4M12 16h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col flex-grow">
+      <div class="flex items-center justify-between h-16 px-4 bg-white shadow-md">
+        <input type="text" placeholder="Search..." class="p-2 border border-gray-300 rounded-md" />
+        <div class="flex items-center space-x-4">
+          <button class="relative">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 7h6m-6 4h6m-6 4h6m-6 4h6"></path>
+            </svg>
+            <span class="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full"></span>
+          </button>
+          <div class="flex items-center space-x-2">
+            <img src="img/wira.png" class="w-10 h-10 rounded-full" alt="User Avatar" />
+            <span>Wira Sukma Saputra</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grow p-4">
+        <!-- Content goes here -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold">Overview</h2>
+            <p class="mt-2 text-gray-600">A quick snapshot of your performance metrics.</p>
+            <div class="mt-4">
+              <span class="block text-2xl font-bold">76%</span>
+              <span class="block text-gray-500">Tasks Completed</span>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold">New Projects</h2>
+            <p class="mt-2 text-gray-600">Stay updated with your new projects.</p>
+            <div class="mt-4">
+              <span class="block text-2xl font-bold">5</span>
+              <span class="block text-gray-500">Projects this month</span>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold">Team Activities</h2>
+            <p class="mt-2 text-gray-600">Recent activities by your team members.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="text-gray-700">Jane Doe completed a task</li>
+              <li class="text-gray-700">John Smith added a new project</li>
+              <li class="text-gray-700">Emily Johnson updated the calendar</li>
+            </ul>
+          </div>
+          <!-- Card 4 -->
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold">Team Activities</h2>
+            <p class="mt-2 text-gray-600">Recent activities by your team members.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="text-gray-700">Jane Doe completed a task</li>
+              <li class="text-gray-700">John Smith added a new project</li>
+              <li class="text-gray-700">Emily Johnson updated the calendar</li>
+            </ul>
+          </div>
+          <!-- Card 5 -->
+          <div class="p-4 bg-white rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold">Team Activities</h2>
+            <p class="mt-2 text-gray-600">Recent activities by your team members.</p>
+            <ul class="mt-4 space-y-2">
+              <li class="text-gray-700">Jane Doe completed a task</li>
+              <li class="text-gray-700">John Smith added a new project</li>
+              <li class="text-gray-700">Emily Johnson updated the calendar</li>
+            </ul>
+          </div>
+          <!-- Card 6 -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

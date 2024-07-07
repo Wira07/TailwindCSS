@@ -1,11 +1,11 @@
-```markdown
+````markdown
 # Belajar TailwindCSS 🎨
 
 Selamat datang di repositori "Belajar TailwindCSS"! 🚀
 
 Ini adalah tempat untuk memulai perjalanan Anda dalam belajar dan menguasai TailwindCSS, sebuah framework CSS utility-first yang sangat populer. 💡
 
-![TailwindCSS](https://tailwindcss.com/_next/static/media/twitter-large-card.9666a36af3f496d8d07b6e0eb605d7e7.png)
+![TailwindCSS](./public/img/wira.png)
 
 ## Fitur ✨
 
@@ -18,36 +18,38 @@ Ini adalah tempat untuk memulai perjalanan Anda dalam belajar dan menguasai Tail
 Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
 
 1. **Kloning Repositori Ini** 📥
-    ```bash
-    git clone https://github.com/Wira07/Belajar-TailwindCSS.git
-    cd Belajar-TailwindCSS
-    ```
+
+   ```bash
+   git clone https://github.com/Wira07/Belajar-TailwindCSS.git
+   cd Belajar-TailwindCSS
+   ```
 
 2. **Instalasi** 🛠️
-    Instal TailwindCSS melalui npm:
-    ```bash
-    npm install
-    ```
+   Instal TailwindCSS melalui npm:
+
+   ```bash
+   npm install
+   ```
 
 3. **Konfigurasi** ⚙️
-    Buat file konfigurasi TailwindCSS:
-    ```bash
-    npx tailwindcss init
-    ```
+   Buat file konfigurasi TailwindCSS:
+
+   ```bash
+   npx tailwindcss init
+   ```
 
 4. **Penggunaan** ✨
-    Tambahkan kelas Tailwind ke dalam HTML Anda:
-    ```html
-    <div class="bg-blue-500 text-white p-4">
-        Halo, TailwindCSS! 🎉
-    </div>
-    ```
+   Tambahkan kelas Tailwind ke dalam HTML Anda:
+
+   ```html
+   <div class="bg-blue-500 text-white p-4">Halo, TailwindCSS! 🎉</div>
+   ```
 
 5. **Kompilasi CSS** 🏗️
-    Kompilasi CSS Anda menggunakan Tailwind CLI:
-    ```bash
-    npx tailwindcss build src/tailwind.css -o dist/output.css
-    ```
+   Kompilasi CSS Anda menggunakan Tailwind CLI:
+   ```bash
+   npx tailwindcss build src/tailwind.css -o dist/output.css
+   ```
 
 ## Dokumentasi 📚
 
@@ -66,4 +68,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 Semoga bermanfaat dan selamat belajar TailwindCSS! 🎉
 
 Dibuat dengan ❤️ oleh [Wira07](https://github.com/Wira07)
-```
+````

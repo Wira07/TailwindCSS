@@ -25,6 +25,7 @@ Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
    ```
 
 2. **Instalasi** 🛠️
+
    Instal TailwindCSS melalui npm:
 
    ```bash
@@ -32,6 +33,7 @@ Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
    ```
 
 3. **Konfigurasi** ⚙️
+
    Buat file konfigurasi TailwindCSS:
 
    ```bash
@@ -39,6 +41,7 @@ Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
    ```
 
 4. **Penggunaan** ✨
+
    Tambahkan kelas Tailwind ke dalam HTML Anda:
 
    ```html
@@ -46,6 +49,7 @@ Berikut adalah langkah-langkah untuk memulai dengan TailwindCSS:
    ```
 
 5. **Kompilasi CSS** 🏗️
+
    Kompilasi CSS Anda menggunakan Tailwind CLI:
    
    ```bash
@@ -69,4 +73,3 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 Semoga bermanfaat dan selamat belajar TailwindCSS! 🎉
 
 Dibuat dengan ❤️ oleh [Wira07](https://github.com/Wira07)
-```

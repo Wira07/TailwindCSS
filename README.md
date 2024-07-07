@@ -5,7 +5,7 @@ Selamat datang di repositori "Belajar TailwindCSS"! 🚀
 
 Ini adalah tempat untuk memulai perjalanan Anda dalam belajar dan menguasai TailwindCSS, sebuah framework CSS utility-first yang sangat populer. 💡
 
-![TailwindCSS](./public/img/wira.png)
+![TailwindCSS](../public/img/wira.png)
 
 ## Fitur ✨
 

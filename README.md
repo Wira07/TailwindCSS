@@ -1,4 +1,4 @@
-![image](https://github.com/Wira07/TailwindCSS/assets/94433717/34638ca7-6b41-4fe4-9fa7-226aa7edb6c8)```markdown
+```markdown
 # Belajar TailwindCSS 🎨
 
 Selamat datang di repositori "Belajar TailwindCSS"! 🚀

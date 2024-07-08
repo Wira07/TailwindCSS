@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/final.css" />
+    <style>
+      .toggle-container {
+        width: 40px;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .toggle-dot {
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+      }
+      .toggle-container.active {
+        background-color: #4f46e5;
+      }
+      .toggle-container.active .toggle-dot {
+        transform: translateX(20px);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            padding: {
+              13: "3.25rem",
+              15: "3.75rem",
+              25: "5.75rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <div class="flex justify-center items-center h-screen">
+      <span class="text-sm text-slate-500 mr-2">Light</span>
+      <div id="toggle" class="toggle-container">
+        <div class="toggle-dot"></div>
+      </div>
+      <span class="text-sm text-slate-500 ml-2">Dark</span>
+    </div>
+
+    <div class="container mx-auto p-4">
+      <div class="max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:bg-gray-400 dark:hover:bg-gray-700 transition-colors duration-300">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-white">Card Title</h2>
+          <p class="text-gray-700 dark:text-gray-300 group-hover:text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nihil quae officia rem fugiat labore itaque maxime eveniet magnam, molestiae provident sit voluptatum nostrum veritatis aliquam maiores voluptatibus harum inventore
+            eum necessitatibus. Esse nesciunt sapiente ipsam, dicta provident quia voluptatem dolore! Inventore dignissimos ipsam explicabo odit deleniti architecto sit vitae!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const toggle = document.querySelector("#toggle");
+      const html = document.querySelector("html");
+
+      // Check if user has a preferred theme
+      if (localStorage.getItem("theme") === "dark") {
+        html.classList.add("dark");
+        toggle.classList.add("active");
+      }
+
+      toggle.addEventListener("click", function () {
+        toggle.classList.toggle("active");
+        if (html.classList.toggle("dark")) {
+          localStorage.setItem("theme", "dark");
+        } else {
+          localStorage.setItem("theme", "light");
+        }
+      });
+    </script>
+  </body>
+</html>
